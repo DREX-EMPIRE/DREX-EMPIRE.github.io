@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esports Event Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Drex Empire Esports</h1>
+    </header>
+
+    <nav>
+        <a href="#register">Register</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#results">Results</a>
+        <a href="#chat">Live Chat</a>
+    </nav>
+
+    <section id="register">
+        <h2>Team Registration</h2>
+        <form id="registrationForm">
+            <input type="text" id="teamName" placeholder="Team Name" required>
+            <input type="text" id="player1" placeholder="Player 1 IGN" required>
+            <input type="text" id="player2" placeholder="Player 2 IGN" required>
+            <input type="text" id="player3" placeholder="Player 3 IGN" required>
+            <input type="text" id="player4" placeholder="Player 4 IGN" required>
+            <button type="submit">Register</button>
+        </form>
+        <p id="responseMessage"></p>
+    </section>
+
+    <section id="schedule">
+        <h2>Tournament Schedule</h2>
+        <p>Will be updated soon...</p>
+    </section>
+
+    <section id="results">
+        <h2>Match Results</h2>
+        <p>Results will be posted here.</p>
+    </section>
+
+    <section id="chat">
+        <h2>Live Chat</h2>
+        <div id="chatBox">
+            <p><strong>Admin:</strong> Welcome to the event! Ask your queries here.</p>
+        </div>
+        <input type="text" id="chatInput" placeholder="Type a message...">
+        <button onclick="sendMessage()">Send</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
